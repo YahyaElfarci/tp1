@@ -50,10 +50,10 @@ class GildedRoseTest {
                     new Item("Backstage passes to a TAFKAL80ETC concert", 1, 9),
 
                     // -4 lorsque sellIn < 0
-                    new Item("Conjured", -1, 9),
-                    new Item("Conjured", 0, 9),
+                    new Item("Conjured Mana Cake", -1, 9),
+                    new Item("Conjured Mana Cake", 0, 9),
                     // -2 lorsque sellIn >= 0
-                    new Item("Conjured", 1, 9),
+                    new Item("Conjured Mana Cake", 1, 9),
 
 
 
