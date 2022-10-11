@@ -58,14 +58,14 @@ public class Item {
 
         //name2="Aged Brie";
         case name2:
-            if (this.quality<50){
-                this.quality++;
+            if (quality<50){
+                quality++;
             }
 
-            this.sellIn--;
+            sellIn--;
 
-            if (this.sellIn<0 && this.quality<50){
-                this.quality++;
+            if (sellIn<0 && quality<50){
+                quality++;
             }
 
             break;
@@ -74,8 +74,12 @@ public class Item {
         case name3:
 
             break;
-
+        //name4="Conjured Mana Cake";
         case name4:
+
+            // On décremente sellIn car name4 != "Sulfuras, Hand of Ragnaros"
+            sellIn--;
+
             if (sellIn<0){
                 quality-=4;
             }

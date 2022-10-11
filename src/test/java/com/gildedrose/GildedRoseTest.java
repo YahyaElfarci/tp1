@@ -51,9 +51,10 @@ class GildedRoseTest {
 
                     // -4 lorsque sellIn < 0
                     new Item("Conjured", -1, 9),
+                    new Item("Conjured", 0, 9),
                     // -2 lorsque sellIn >= 0
                     new Item("Conjured", 1, 9),
-                    new Item("Conjured", 0, 9),
+
 
 
 
@@ -76,7 +77,7 @@ class GildedRoseTest {
 
 
     assertThat(elements[10].quality, is( 5));
-    assertThat(elements[11].quality, is( 7));
+    assertThat(elements[11].quality, is( 5));
     assertThat(elements[12].quality, is( 7));
 
 
