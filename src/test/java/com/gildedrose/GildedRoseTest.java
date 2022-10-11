@@ -49,6 +49,12 @@ class GildedRoseTest {
                     new Item("Backstage passes to a TAFKAL80ETC concert", -1, 51),
                     new Item("Backstage passes to a TAFKAL80ETC concert", 1, 9),
 
+                    // -4 lorsque sellIn < 0
+                    new Item("Conjured", -1, 9),
+                    // -2 lorsque sellIn >= 0
+                    new Item("Conjured", 1, 9),
+                    new Item("Conjured", 0, 9),
+
 
 
 
@@ -67,6 +73,11 @@ class GildedRoseTest {
     assertThat(elements[7].quality, is( 0));
     assertThat(elements[8].quality, is( 0));
     assertThat(elements[9].quality, is( 12));
+
+
+    assertThat(elements[10].quality, is( 5));
+    assertThat(elements[11].quality, is( 7));
+    assertThat(elements[12].quality, is( 7));
 
 
   }
