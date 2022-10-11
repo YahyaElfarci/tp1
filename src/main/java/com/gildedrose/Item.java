@@ -14,8 +14,7 @@ public class Item {
     public  static final   String  name1="Backstage passes to a TAFKAL80ETC concert";
     public  static final   String  name2="Aged Brie";
     public  static final   String  name3="Sulfuras, Hand of Ragnaros";
-
-    //public final static  String CAKE="Conjured Mana Cake";
+    public final static    String name4="Conjured Mana Cake";
 
     public Item(String name, int sellIn, int quality) {
         this.name = name;
@@ -59,14 +58,14 @@ public class Item {
 
         //name2="Aged Brie";
         case name2:
-            if (quality<50){
-                quality++;
+            if (this.quality<50){
+                this.quality++;
             }
 
-            sellIn--;
+            this.sellIn--;
 
-            if (sellIn<0 && quality<50){
-                quality++;
+            if (this.sellIn<0 && this.quality<50){
+                this.quality++;
             }
 
             break;
@@ -75,6 +74,18 @@ public class Item {
         case name3:
 
             break;
+
+        case name4:
+            if (sellIn<0){
+                quality-=4;
+            }
+            if (sellIn>=0){
+                quality-=2;
+            }
+
+            break;
+
+
 
 
         default:
