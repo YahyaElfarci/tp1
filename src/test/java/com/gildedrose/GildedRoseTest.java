@@ -21,8 +21,7 @@ class GildedRoseTest {
   @DisplayName("toString Test")
   void toString_Test() {
     Item element = new Item("Jack D", 19, 9);
-//    GildedRose app = new GildedRose(new Item[] {element});
-//    app.updateQuality();
+  //     GildedRose app = new GildedRose(new Item[] {element});//    app.updateQuality();
     assertThat(element.toString(), is("Jack D, 19, 9"));
   }
 
@@ -46,7 +45,7 @@ class GildedRoseTest {
                     new Item("Sulfuras, Hand of Ragnaros", -19, 9),
 
                     //52 : items[i].quality = items[i].quality - items[i].quality;
-                    new Item("Backstage passes to a TAFKAL80ETC concert", -1, 50),
+                    new Item(Item.name1, -1, 50),
                     new Item("Backstage passes to a TAFKAL80ETC concert", -1, 51),
                     new Item("Backstage passes to a TAFKAL80ETC concert", 1, 9),
 
@@ -79,7 +78,7 @@ class GildedRoseTest {
     Item[] elements = new Item[]
             {
                     //21 : items[i].quality = items[i].quality + 1;
-                    new Item("Aged Brie", 19, 50),
+                    new Item(Item.name2, 19, 50),
                     new Item("Aged Brie", 19, 9),
 
                     //26 : items[i].quality = items[i].quality + 1;
@@ -93,7 +92,7 @@ class GildedRoseTest {
                     new Item("Backstage passes to a TAFKAL80ETC concert", 5, 48),
 
                     //56 : items[i].quality = items[i].quality + 1;
-                    new Item("Aged Brie", -1, 9),
+                    new Item(Item.name2, -1, 9),
                     new Item("Aged Brie", -1, 49),
                     new Item("Aged Brie", 1, 9),
 
@@ -133,12 +132,6 @@ class GildedRoseTest {
             {
                     //40 : items[i].sellIn = items[i].sellIn - 1;
                     new Item("eee", 19, 9),
-
-
-
-
-
-
 
             };
 
