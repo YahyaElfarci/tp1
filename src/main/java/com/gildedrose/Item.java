@@ -14,7 +14,7 @@ public class Item {
     public  static final   String  name1="Backstage passes to a TAFKAL80ETC concert";
     public  static final   String  name2="Aged Brie";
     public  static final   String  name3="Sulfuras, Hand of Ragnaros";
-    public final static    String name4="Conjured Mana Cake";
+    public final static    String  name4="Conjured Mana Cake";
 
     public Item(String name, int sellIn, int quality) {
         this.name = name;

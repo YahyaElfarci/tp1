@@ -21,7 +21,7 @@ class GildedRoseTest {
   @DisplayName("toString Test")
   void toString_Test() {
     Item element = new Item("Jack D", 19, 9);
-  //     GildedRose app = new GildedRose(new Item[] {element});//    app.updateQuality();
+
     assertThat(element.toString(), is("Jack D, 19, 9"));
   }
 
@@ -35,25 +35,25 @@ class GildedRoseTest {
                     //16 : items[i].quality = items[i].quality - 1;
                     new Item("aaa", 19, 0),
                     new Item("aaa", 19, 9),
-                    new Item("Sulfuras, Hand of Ragnaros", 19, 9),
+                    new Item(Item.name3, 19, 9),
 
 
                     //48 : items[i].quality = items[i].quality - 1;
                     new Item("bbb", 1, 9),
                     new Item("bbb", -19, 0),
                     new Item("bbb", -19, 9),
-                    new Item("Sulfuras, Hand of Ragnaros", -19, 9),
+                    new Item(Item.name3, -19, 9),
 
                     //52 : items[i].quality = items[i].quality - items[i].quality;
                     new Item(Item.name1, -1, 50),
-                    new Item("Backstage passes to a TAFKAL80ETC concert", -1, 51),
-                    new Item("Backstage passes to a TAFKAL80ETC concert", 1, 9),
+                    new Item(Item.name1, -1, 51),
+                    new Item(Item.name1, 1, 9),
 
                     // -4 lorsque sellIn < 0
-                    new Item("Conjured Mana Cake", -1, 9),
-                    new Item("Conjured Mana Cake", 0, 9),
+                    new Item(Item.name4, -1, 9),
+                    new Item(Item.name4, 0, 9),
                     // -2 lorsque sellIn >= 0
-                    new Item("Conjured Mana Cake", 1, 9),
+                    new Item(Item.name4, 1, 9),
 
 
 
@@ -91,22 +91,22 @@ class GildedRoseTest {
             {
                     //21 : items[i].quality = items[i].quality + 1;
                     new Item(Item.name2, 19, 50),
-                    new Item("Aged Brie", 19, 9),
+                    new Item(Item.name2, 19, 9),
 
                     //26 : items[i].quality = items[i].quality + 1;
-                    new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
-                    new Item("Backstage passes to a TAFKAL80ETC concert", 10, 9),
-                    new Item("Backstage passes to a TAFKAL80ETC concert", 11, 9),
+                    new Item(Item.name1, 10, 49),
+                    new Item(Item.name1, 10, 9),
+                    new Item(Item.name1 , 11, 9),
 
                     //32 : items[i].quality = items[i].quality + 1;
-                    new Item("Backstage passes to a TAFKAL80ETC concert", 5, 9),
-                    new Item("Backstage passes to a TAFKAL80ETC concert", 6, 9),
-                    new Item("Backstage passes to a TAFKAL80ETC concert", 5, 48),
+                    new Item(Item.name1, 5, 9),
+                    new Item(Item.name1, 6, 9),
+                    new Item(Item.name1, 5, 48),
 
                     //56 : items[i].quality = items[i].quality + 1;
                     new Item(Item.name2, -1, 9),
-                    new Item("Aged Brie", -1, 49),
-                    new Item("Aged Brie", 1, 9),
+                    new Item(Item.name2, -1, 49),
+                    new Item(Item.name2, 1, 9),
 
 
 
